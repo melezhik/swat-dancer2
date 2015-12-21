@@ -16,10 +16,11 @@ Runs regression [swat](https://github.com/melezhik/swat) checks against a sample
 
 # USAGE
 
-    sparrow project create dancer-check
-    sparrow project check_add dancer-app-check
-    sparrow check_set dancer-app-check -p swat-dancer2 -u 127.0.0.1:5000
-    sparrow check_run
+    sparrow project create dancer2
+    sparrow project check_add dancer2 regress-check
+    sparrow project check_set dancer2 regress-check -p swat-dancer2 -u 127.0.0.1:5000
+    sparrow project check_run dancer2 regress-check
+
 
 # Dancer application
 
