@@ -3,20 +3,31 @@ package swat::dancer;
 
 package main;
 
-sub project_root_dir {
-    get_prop('project')
-}
-
 sub start_dancer_app {
+
     my $project_root_dir = project_root_dir();
-    `cd $project_root_dir && export project_root_dir=$project_root_dir && carton exec  plackup  -s Starman -D 'app.pl' --pid /tmp/app.pid`;
+
+    system("cd $project_root_dir && ".
+    "export project_root_dir=$project_root_dir &&".
+    "nohup carton exec nohup plackup ".
+    "--host 0.0.0.0 --port 5000 ".
+    "--access-log ".test_root_dir()."/access.log ".
+    "--error-log ".test_root_dir()."/error.log ".
+    'app.pl 1>/dev/null 2>/dev/null & echo $! > /tmp/app.pid');
+
     my $pid = get_app_pid();
     ok($pid,"dancer is running . pid: $pid");
+
 }
 
+
 sub stop_dancer_app {
+
     my $pid = get_app_pid();
-    `kill $pid` if $pid;
+    chomp $pid;
+    return unless $pid=~/^\d+$/;
+    ok($pid, "killing dancer app at pid $pid ...");
+    system("ps --pid $pid --no-headers | grep $pid -q && kill $pid 1>/dev/null 2>/dev/null") ;
 }
 
 sub get_app_pid {

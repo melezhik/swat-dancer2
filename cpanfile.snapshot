@@ -846,6 +846,12 @@ DISTRIBUTIONS
       POSIX 0
       Socket 0
       Time::HiRes 0
+  Outthentic-DSL-0.0.4
+    pathname: M/ME/MELEZHIK/Outthentic-DSL-0.0.4.tar.gz
+    provides:
+      Outthentic::DSL 0.000004
+    requirements:
+      ExtUtils::MakeMaker 6.36
   POSIX-strftime-Compiler-0.41
     pathname: K/KA/KAZEBURO/POSIX-strftime-Compiler-0.41.tar.gz
     provides:
@@ -1482,14 +1488,14 @@ DISTRIBUTIONS
     requirements:
       ExtUtils::MakeMaker 0
       perl 5.008001
-  swat-0.1.59
-    pathname: M/ME/MELEZHIK/swat-0.1.59.tar.gz
+  swat-0.1.71
+    pathname: M/ME/MELEZHIK/swat-0.1.71.tar.gz
     provides:
-      swat 0.001059
+      swat 0.001071
       swat::story undef
     requirements:
       ExtUtils::MakeMaker 6.36
-      File::ShareDir 0
       File::Temp 0
+      Outthentic::DSL v0.0.3
       Test::Harness 0
       Test::More 0
