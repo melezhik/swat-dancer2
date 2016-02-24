@@ -1,6 +1,6 @@
-use swat::dancer;
+use swat::app;
 
-start_dancer_app();
+start_app();
 
 run_swat_module( GET => 'cookie' );
 

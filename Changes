@@ -1,3 +1,7 @@
+0.0.6 2016-02-24
+
+    this version works under 3ppm environment
+
 0.0.5 2016-02-24
 
     pid_file could be overriden

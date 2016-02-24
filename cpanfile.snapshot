@@ -318,20 +318,6 @@ DISTRIBUTIONS
       perl 5.006
       strict 0
       warnings 0
-  Data-Dump-1.23
-    pathname: G/GA/GAAS/Data-Dump-1.23.tar.gz
-    provides:
-      Data::Dump 1.23
-      Data::Dump::FilterContext undef
-      Data::Dump::Filtered undef
-      Data::Dump::Trace 0.02
-      Data::Dump::Trace::Call 0.02
-      Data::Dump::Trace::Wrapper 0.02
-    requirements:
-      ExtUtils::MakeMaker 0
-      Symbol 0
-      Test 0
-      perl 5.006
   Data-Munge-0.095
     pathname: M/MA/MAUKE/Data-Munge-0.095.tar.gz
     provides:
@@ -419,45 +405,6 @@ DISTRIBUTIONS
       base 0
       overload 0
       perl 5.008001
-      strict 0
-      warnings 0
-  ExtUtils-Config-0.008
-    pathname: L/LE/LEONT/ExtUtils-Config-0.008.tar.gz
-    provides:
-      ExtUtils::Config 0.008
-    requirements:
-      Data::Dumper 0
-      ExtUtils::MakeMaker 6.30
-      strict 0
-      warnings 0
-  ExtUtils-Helpers-0.022
-    pathname: L/LE/LEONT/ExtUtils-Helpers-0.022.tar.gz
-    provides:
-      ExtUtils::Helpers 0.022
-      ExtUtils::Helpers::Unix 0.022
-      ExtUtils::Helpers::VMS 0.022
-      ExtUtils::Helpers::Windows 0.022
-    requirements:
-      Carp 0
-      Exporter 5.57
-      ExtUtils::MakeMaker 6.30
-      File::Basename 0
-      File::Copy 0
-      File::Spec::Functions 0
-      Module::Load 0
-      Text::ParseWords 3.24
-      strict 0
-      warnings 0
-  ExtUtils-InstallPaths-0.011
-    pathname: L/LE/LEONT/ExtUtils-InstallPaths-0.011.tar.gz
-    provides:
-      ExtUtils::InstallPaths 0.011
-    requirements:
-      Carp 0
-      ExtUtils::Config 0.002
-      ExtUtils::MakeMaker 0
-      File::Spec 0
-      perl 5.006
       strict 0
       warnings 0
   File-ShareDir-1.102
@@ -591,14 +538,6 @@ DISTRIBUTIONS
       MIME::QuotedPrint 0
       URI 1.10
       perl 5.008001
-  HTTP-Parser-XS-0.17
-    pathname: K/KA/KAZUHO/HTTP-Parser-XS-0.17.tar.gz
-    provides:
-      HTTP::Parser::XS 0.17
-      HTTP::Parser::XS::PP undef
-    requirements:
-      ExtUtils::MakeMaker 6.36
-      Test::More 0.96
   Hash-Merge-Simple-0.051
     pathname: R/RO/ROKR/Hash-Merge-Simple-0.051.tar.gz
     provides:
@@ -712,31 +651,6 @@ DISTRIBUTIONS
       Text::ParseWords 0
       perl 5.008000
       version 0.87
-  Module-Build-Tiny-0.039
-    pathname: L/LE/LEONT/Module-Build-Tiny-0.039.tar.gz
-    provides:
-      Module::Build::Tiny 0.039
-    requirements:
-      CPAN::Meta 0
-      DynaLoader 0
-      Exporter 5.57
-      ExtUtils::CBuilder 0
-      ExtUtils::Config 0.003
-      ExtUtils::Helpers 0.020
-      ExtUtils::Install 0
-      ExtUtils::InstallPaths 0.002
-      ExtUtils::ParseXS 0
-      File::Basename 0
-      File::Find 0
-      File::Path 0
-      File::Spec::Functions 0
-      Getopt::Long 2.36
-      JSON::PP 2
-      Pod::Man 0
-      TAP::Harness::Env 0
-      perl 5.006
-      strict 0
-      warnings 0
   Module-Implementation-0.09
     pathname: D/DR/DROLSKY/Module-Implementation-0.09.tar.gz
     provides:
@@ -813,39 +727,6 @@ DISTRIBUTIONS
     requirements:
       ExtUtils::MakeMaker 0
       Module::Runtime 0.014
-  Net-Server-2.008
-    pathname: R/RH/RHANDOM/Net-Server-2.008.tar.gz
-    provides:
-      Net::Server 2.008
-      Net::Server::Daemonize 0.06
-      Net::Server::Fork undef
-      Net::Server::HTTP undef
-      Net::Server::INET undef
-      Net::Server::INET::Handle undef
-      Net::Server::Log::Log::Log4perl undef
-      Net::Server::Log::Sys::Syslog undef
-      Net::Server::MultiType undef
-      Net::Server::Multiplex undef
-      Net::Server::Multiplex::MUX undef
-      Net::Server::PSGI undef
-      Net::Server::PreFork undef
-      Net::Server::PreForkSimple undef
-      Net::Server::Proto undef
-      Net::Server::Proto::SSL undef
-      Net::Server::Proto::SSLEAY undef
-      Net::Server::Proto::TCP undef
-      Net::Server::Proto::UDP undef
-      Net::Server::Proto::UNIX undef
-      Net::Server::Proto::UNIXDGRAM undef
-      Net::Server::SIG 0.03
-      Net::Server::Single undef
-      Net::Server::TiedHandle 2.008
-    requirements:
-      ExtUtils::MakeMaker 0
-      IO::Socket 0
-      POSIX 0
-      Socket 0
-      Time::HiRes 0
   Outthentic-DSL-0.0.4
     pathname: M/ME/MELEZHIK/Outthentic-DSL-0.0.4.tar.gz
     provides:
@@ -1075,24 +956,6 @@ DISTRIBUTIONS
       ExtUtils::MakeMaker 0
       Scalar::Util 0
       perl 5.006
-  Starman-0.4014
-    pathname: M/MI/MIYAGAWA/Starman-0.4014.tar.gz
-    provides:
-      HTTP::Server::PSGI::Net::Server::PreFork undef
-      Plack::Handler::Starman undef
-      Starman 0.4014
-      Starman::Server undef
-    requirements:
-      Data::Dump 0
-      HTTP::Date 0
-      HTTP::Parser::XS 0
-      HTTP::Status 0
-      Module::Build::Tiny 0.039
-      Net::Server 2.007
-      Plack 0.9971
-      Test::TCP 2.00
-      parent 0
-      perl 5.008001
   Stream-Buffered-0.03
     pathname: D/DO/DOY/Stream-Buffered-0.03.tar.gz
     provides:
