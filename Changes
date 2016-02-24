@@ -1,0 +1,6 @@
+0.0.4 2016-02-23
+
+    refactoring - run dancer app only once
+
+    made use of Net::EmptyPort to run on first available tcp port
+
