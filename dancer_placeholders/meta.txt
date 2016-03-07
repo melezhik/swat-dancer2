@@ -1,0 +1,3 @@
+Dancer2 should be able
+to accept named request parameters
+
