@@ -16,7 +16,10 @@ get '/cookie' => sub {
 };
 
 get '/appname' => sub {
-    return "This is " . config->{appname};
+    return (
+        "This is appname:" . config->{appname}."\n".
+        "This is foo:" . config->{foo}
+    );
 };
 
 get 'static/:file' => sub {
