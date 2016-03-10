@@ -1,4 +1,3 @@
 200 OK
-hello-swat
-regexp: Server: Perl Dancer2 (\d+.\d+)
+generator: [ "Hi there ".( module_variable('name') )]
 

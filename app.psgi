@@ -3,7 +3,11 @@
 use Dancer2;
 
 get '/hello/:name' => sub {
-    return "Why, hello there " . param('name')."\n";
+    return "Hi there ".route_parameters->get('name');
+};
+
+get '/hello2/:name' => sub {
+    return "Hi2 there ".query_parameters->get('name');
 };
 
 any ['get', 'post'] => '/myaction' => sub {
@@ -15,10 +19,10 @@ get '/cookie' => sub {
     return $cookie->value;
 };
 
-get '/appname' => sub {
+get '/config' => sub {
     return (
-        "This is appname:" . config->{appname}."\n".
-        "This is foo:" . config->{foo}
+        "This is appname: " . config->{appname}."\n".
+        "This is foo: " . config->{foo}
     );
 };
 
